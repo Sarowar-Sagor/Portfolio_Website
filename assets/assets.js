@@ -16,9 +16,11 @@ import logo_dark from './logo_dark.png';
 import mail_icon from './mail_icon.png';
 import mail_icon_dark from './mail_icon_dark.png';
 import profile_img from './profile-img.png';
+import sagor from './sagor.jpg';
 import profile_image from './profile-image.jpg';
 import download_icon from './download-icon.png';
 import hand_icon from './hand-icon.png';
+import react from './react.png';
 import header_bg_color from './header-bg-color.png';
 import moon_icon from './moon_icon.png';
 import sun_icon from './sun_icon.png';
@@ -39,6 +41,7 @@ import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 
 export const assets = {
     user_image,
+    sagor,
     profile_image,
     code_icon,
     code_icon_dark,
@@ -48,6 +51,7 @@ export const assets = {
     project_icon_dark,
     vscode,
     firebase,
+    react,
     figma,
     git,
     mongodb,
@@ -80,25 +84,28 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Frontend project',
+        title: 'Restaurant Project',
         description: 'Web Design',
-        bgImage: '/work-1.png',
+        bgImage: '/Restaurant.jpg',
+        link: 'https://restaurant-99179.web.app/'
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
-    },
-    {
-        title: 'Photography site',
+        title: 'Job Portal',
         description: 'Web Design',
-        bgImage: '/work-3.png',
+        bgImage: '/Job.jpg',
+        link: 'https://job-portal-client-66ea0.web.app/'
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
+        title: 'Street Coffee',
+        description: 'Web Design',
+        bgImage: '/coffee.jpg',
+        link: 'https://coffee-store-8ddda.web.app/'
     },
+    // {
+    //     title: 'UI/UX designing',
+    //     description: 'UI/UX Design',
+    //     bgImage: '/work-4.png',
+    // },
 ]
 
 export const serviceData = [
@@ -115,5 +122,5 @@ export const infoList = [
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.vscode, assets.firebase, assets.mongodb, assets.react, assets.git
 ];

@@ -31,14 +31,15 @@ const Work = () => {
                 className="text-center max-w-2xl mx-auto mt-5 mb-12">Welcome to my web development portfolio! Explore a collection of projects showcasing my expertise in front-end development.
             </motion.p>
 
+            {/* <a href=""></a> */}
             <motion.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.9 }}
-                className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {
                     workData.map((project, index) => (
-                        <motion.div
+                        <motion.a href={project.link} target="_blank"
                             whileHover={{ scale: 1.05 }}
                             transition={{ duration: 0.5 }}
                             className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group" key={index} style={{ backgroundImage: `url(${project.bgImage})` }}>
@@ -52,7 +53,7 @@ const Work = () => {
                                 </div>
                             </div>
 
-                        </motion.div>
+                        </motion.a>
                     ))
                 }
             </motion.div>

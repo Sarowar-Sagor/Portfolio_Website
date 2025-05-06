@@ -11,7 +11,7 @@ const Header = () => {
                 whileInView={{ scale: 1 }}
                 transition={{ duration: 0.7, type: "spring", stiffness: 100 }}
             >
-                <Image src={assets.profile_image} alt="" className="w-40 aspect-square rounded-full"></Image>
+                <Image src={assets.sagor} alt="" className="w-40 aspect-square rounded-full"></Image>
             </motion.div>
 
             <motion.h2
@@ -25,14 +25,14 @@ const Header = () => {
                 initial={{ y: -30, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.7, delay: 0.5 }}
-                className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">Fronted Web Developer
+                className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">Front-end Web Developer
             </motion.h1>
 
             <motion.p
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.7 }}
-                className="max-w-2xl mx-auto font-Ovo">I am frontend developer with no experiance. I am trying to develop website for professional use.
+                className="max-w-2xl mx-auto font-Ovo">I’m a passionate front-end developer. While I don’t have professional experience yet, I’m actively building a fully functional, high-quality website to showcase my skills and dedication.
             </motion.p>
 
 
@@ -47,7 +47,7 @@ const Header = () => {
                     initial={{ y: 30, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.6, delay: 1.1 }}
-                    className="flex items-center gap-2 rounded-full px-10 py-3 border border-gray-500" href="/sample-resume.pdf" download> My Resume <Image src={assets.download_icon} alt="" className="w-4"></Image></motion.a>
+                    className="flex items-center gap-2 rounded-full px-10 py-3 border border-gray-500" href="/Sarowar-Alam-Sagor-CV.pdf" download> My Resume <Image src={assets.download_icon} alt="" className="w-4"></Image></motion.a>
             </div>
         </div>
     );
