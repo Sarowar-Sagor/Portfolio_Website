@@ -30,20 +30,20 @@ const About = () => {
                 transition={{ duration: 0.8 }}
                 className="flex flex-col lg:flex-row items-center gap-20 my-12">
 
-                <motion.div
+                {/* <motion.div
                     initial={{ opacity: 0, scale: 0.5 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.6 }}
                     className="w-64 sm:w-80 max-w-none">
                     <Image className="rounded-3xl" src={assets.profile_image} alt="user"></Image>
-                </motion.div>
+                </motion.div> */}
 
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.6, delay: 0.8 }}
                     className="flex-1">
-                    <p className="max-w-2xl mb-4">Aspiring frontend developer with a strong foundation in JavaScript, React.js, and modern UI libraries like Tailwind CSS
+                    <p className="max-w-2xl mb-4">Aspiring front-end / full-stack developer with a strong foundation in JavaScript, React.js, and modern UI libraries like Tailwind CSS
                         and DaisyUI. Experienced in building responsive and user-friendly web interfaces, with additional knowledge in backend
                         technologies such as Express.js and databases like MongoDB and MySQL. I have a solid understanding of data structures
                         and algorithms, with hands-on experience in problem-solving across various online judges. I focus on creating clean, responsive user interfaces using modern technologies and best practices.</p>
@@ -80,7 +80,7 @@ const About = () => {
                                 <motion.li
                                     whileHover={{ scale: 1.1 }}
                                     className="w-12 sm:w-14 aspect-square border border-gray-500 rounded-xl cursor-pointer hover:-translate-y-1 duration-500 flex justify-center items-center hover:shadow-2xl" key={index}>
-                                    <Image title="react" src={tool} alt="Tool" className="w-5 sm:w-7"></Image>
+                                    <Image title={tool.title} src={tool.img} alt="Tool" className="w-5 sm:w-7"></Image>
                                 </motion.li>
                             ))
                         }

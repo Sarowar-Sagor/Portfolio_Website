@@ -1,6 +1,7 @@
 import { assets } from "@/assets/assets";
 import Image from "next/image";
 import { motion } from "motion/react";
+import HeroSection from "./HeroSection";
 
 const Header = () => {
     return (
@@ -25,14 +26,14 @@ const Header = () => {
                 initial={{ y: -30, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.7, delay: 0.5 }}
-                className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">Front-end Web Developer
+                className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo"><HeroSection/>
             </motion.h1>
 
             <motion.p
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.7 }}
-                className="max-w-2xl mx-auto font-Ovo">I’m a passionate front-end developer. While I don’t have professional experience yet, I’m actively building a fully functional, high-quality website to showcase my skills and dedication.
+                className="max-w-2xl mx-auto font-Ovo">I’m a passionate front-end / full-stack developer. While I don’t have professional experience yet, I’m actively building a fully functional, high-quality website to showcase my skills and dedication.
             </motion.p>
 
 

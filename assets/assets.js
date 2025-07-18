@@ -87,19 +87,22 @@ export const workData = [
         title: 'Restaurant Project',
         description: 'Web Design',
         bgImage: '/Restaurant.jpg',
-        link: 'https://restaurant-99179.web.app/'
+        link: 'https://restaurant-99179.web.app/',
+        github: 'https://github.com/Sarowar-Sagor/Restaurant-Services'
     },
     {
         title: 'Job Portal',
         description: 'Web Design',
         bgImage: '/Job.jpg',
-        link: 'https://job-portal-client-66ea0.web.app/'
+        link: 'https://modern-branch-job-portal.surge.sh/',
+        github: 'https://github.com/Sarowar-Sagor/Job-portal'
     },
     {
         title: 'Street Coffee',
         description: 'Web Design',
         bgImage: '/coffee.jpg',
-        link: 'https://coffee-store-8ddda.web.app/'
+        link: 'https://coffee-store-8ddda.web.app/',
+        github: 'https://github.com/Sarowar-Sagor/Coffee-store-client'
     },
     // {
     //     title: 'UI/UX designing',
@@ -116,11 +119,30 @@ export const serviceData = [
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Tech Stack', description: 'HTML, Tailwind CSS, Python JavaScript, React Js, Next Js, Redux, Node Js, Express Js, MongoDB'},
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Sc in Computer Science & Engineering from RUET' },
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 3 projects' }
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.react, assets.git
+    {
+        img: assets.vscode,
+        title: "VS Code"
+    },
+    {
+        img: assets.firebase,
+        title: "Firebase"
+    },
+    {
+        img: assets.mongodb,
+        title: "Mongo DB"
+    },
+    {
+        img: assets.react,
+        title: "React"
+    },
+    {
+        img: assets.git,
+        title: "Git"
+    }
 ];

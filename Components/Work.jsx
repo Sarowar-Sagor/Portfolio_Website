@@ -47,13 +47,16 @@ const Work = () => {
                                 <div>
                                     <h2 className="font-semibold">{project.title}</h2>
                                     <p className="text-sm text-gray-700">{project.description}</p>
+                                    <p> <span className="font-semibold">Details: </span>  <a href={project.github} target="_blank" className="text-blue-500 hover:underline">GitHub</a></p>
                                 </div>
                                 <div className="border rounded-full w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300">
                                     <Image src={assets.send_icon} alt="send" className="w-5"></Image>
                                 </div>
                             </div>
+                            
 
                         </motion.a>
+                        
                     ))
                 }
             </motion.div>
