@@ -27,8 +27,7 @@ This portfolio includes several key sections and features to provide a comprehen
 
 ## 🚀 Live Demo
 
-Experience the portfolio live:
-[https://portfolio-website-five-sigma-99.vercel.app/](https://portfolio-website-five-sigma-99.vercel.app/)
+Experience the portfolio live: [Portfolio](https://portfolio-website-five-sigma-99.vercel.app/)
 
 
 ## 🛠️ Technologies Used
