@@ -82,11 +82,11 @@ const SkillsSection = () => {
                             initial={{ opacity: 0, x: 30 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.8, delay: 0.5 }}
-                            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 justify-items-center">
+                            className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-7">
                             {skillCategory.items.map((skill, skillIndex) => (
                                 <div
                                     key={skillIndex}
-                                    className="flex flex-col items-center p-4 bg-gradient-to-b from-gray-400 to-gray-700 rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
+                                    className="flex flex-col items-center p-4 bg-gradient-to-b from-gray-400 to-gray-800 rounded-lg shadow-md hover:shadow-2xl hover:shadow-cyan-800 transition-all duration-500 transform hover:-translate-y-2 hover:scale-105"
                                 >
                                     {/* For Next.js Image component, ensure your domain is configured in next.config.js for external images or use local SVGs */}
                                     {/* If using react-icons, render the component directly: <skill.icon size={48} className="text-blue-500" /> */}
