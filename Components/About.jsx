@@ -1,6 +1,7 @@
 import { assets, infoList, toolsData } from "@/assets/assets";
 import Image from "next/image";
 import { motion } from "motion/react";
+import SkillsSection from "./SkillsSection";
 
 const About = () => {
 
@@ -28,7 +29,7 @@ const About = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.8 }}
-                className="flex flex-col lg:flex-row items-center gap-20 my-12">
+                className="flex items-center justify-center gap-20 my-12">
 
                 {/* <motion.div
                     initial={{ opacity: 0, scale: 0.5 }}
@@ -43,7 +44,7 @@ const About = () => {
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.6, delay: 0.8 }}
                     className="flex-1">
-                    <p className="max-w-2xl mb-4">Aspiring front-end / full-stack developer with a strong foundation in JavaScript, React.js, and modern UI libraries like Tailwind CSS
+                    <p className="max-w-2xl mb-4 mx-auto">Aspiring front-end / full-stack developer with a strong foundation in JavaScript, React.js, and modern UI libraries like Tailwind CSS
                         and DaisyUI. Experienced in building responsive and user-friendly web interfaces, with additional knowledge in backend
                         technologies such as Express.js and databases like MongoDB and MySQL. I have a solid understanding of data structures
                         and algorithms, with hands-on experience in problem-solving across various online judges. I focus on creating clean, responsive user interfaces using modern technologies and best practices.</p>
@@ -52,7 +53,7 @@ const About = () => {
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         transition={{ duration: 0.8, delay: 1 }}
-                        className="grid grid-cols-1 sm:grid-cols-3 gap-5 max-w-2xl">
+                        className="grid grid-cols-1 sm:grid-cols-3 gap-5 mx-auto max-w-2xl">
                         {infoList.map(({ icon, iconDark, description, title }, index) => (
                             <motion.li
                                 whileInView={{ scale: 1.01 }}
@@ -63,18 +64,20 @@ const About = () => {
                             </motion.li>
                         ))}
                     </motion.ul>
-
-                    <motion.h3
+                    <div>
+                        <SkillsSection />
+                    </div>
+                    {/* <motion.h3
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1.3, delay: 0.5 }}
-                        className="my-6 text-gray-600">Tools I use</motion.h3>
+                        className="my-6 text-center text-gray-600">Tools I use</motion.h3> */}
 
-                    <motion.ul
+                    {/* <motion.ul
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         transition={{ duration: 1.5, delay: 0.6 }}
-                        className="flex items-center gap-3 sm:gap-5">
+                        className="flex items-center justify-center gap-3 sm:gap-5">
                         {
                             toolsData.map((tool, index) => (
                                 <motion.li
@@ -84,7 +87,7 @@ const About = () => {
                                 </motion.li>
                             ))
                         }
-                    </motion.ul>
+                    </motion.ul> */}
                 </motion.div>
             </motion.div>
         </motion.div>
